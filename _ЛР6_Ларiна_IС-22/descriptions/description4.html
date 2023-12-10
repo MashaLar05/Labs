@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ukr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Звіт до лабораторних робіт</title>
+    <link rel="stylesheet" type="text/css" href="description.css">
+</head>
+
+<body>
+<div class="fixed-header">
+
+
+<img src="images\фото_студента.jpg", alt="Фото студента", style="width: 80px; height: 80; margin-top: 10px; margin-right: 20px; float: right;">
+
+<h4>ЗВІТ ДО ЛАБОРАТОРНИХ РОБІТ</h4>
+<h4>З ДИСЦИПЛІНИ "ІНТЕРНЕТ ТЕХНОЛОГІЇ та ПРОЕКТУВАННЯ WEB-ЗАСТОСУВАНЬ"</h4>
+<p>Cтудентка групи ІС-22 Ларіна Марія</p>
+
+</div>
+    
+<div class="content">
+    <form>
+        <div style="white-space: nowrap;">
+        <button class="buttons"><a href="description.html">Лабораторна №1</a></button>
+        <button class="buttons"><a href="description2.html">Лабораторна №2</a></button>
+        <button class="buttons"><a href="description3.html">Лабораторна №3</a></button>
+        <button class="buttons">Лабораторна №4</button>
+        <button class="buttons"><a href="description5.html">Лабораторна №5</a></button>
+        <button class="buttons"><a href="description6.html">Лабораторна №6</a></button>
+        <button class="buttons">Лабораторна №7</button>
+        <button class="buttons">Лабораторна №8</button>
+        <button class="buttons">Лабораторна №9</button>
+        </div>
+    
+    </form>
+
+    <form>
+        <fieldset class="main_form">
+            <p id="shown">
+                <strong>Тема, мета, місце розташування проекту</strong><br><br> Тема: АДАПТИВНА ВЕРСТКА. МЕДІА-ЗАПИТИ. МЕТАТЕГ VIEWPORT.
+                СТРАТЕГІЯ MOBILE FIRST. <br><br> Мета:<br>
+                Адаптивна верстка. Медіа-запити. Медіа-типи. Медіа-функції.Метатег
+                viewport. Інструменти розробника. Стратегія Mobile First.<br><br> 
+                <a href='../Project/Homepage.html'>Місце розташування проекту</a><br><br>
+            </p>
+        </fieldset>
+    </form>
+    
+    <div>
+    <button class="left_buttons" onclick="change(1)">Тема, мета, місце розташування</button><br>
+    <button class="left_buttons" onclick="change(2)">Десктопна версія</button><br>
+    <button class="left_buttons" onclick="change(3)">Планшетна версія</button><br>
+    <button class="left_buttons" onclick="change(4)">Мобільна версія</button><br>
+    <button class="left_buttons" onclick="change(5)">Логічні оператори</button><br>
+    <button class="left_buttons" onclick="change(6)">Висновки</button><br>
+    </div>
+
+    <script>
+        function change(button_number)
+        {
+            var newText;
+            switch(button_number)
+            {
+                case 1:
+                newText = "<strong>Тема, мета, місце розташування проекту</strong><br><br> Тема: АДАПТИВНА ВЕРСТКА. МЕДІА-ЗАПИТИ. МЕТАТЕГ VIEWPORT.                СТРАТЕГІЯ MOBILE FIRST. <br><br> Мета:<br>                Адаптивна верстка. Медіа-запити. Медіа-типи. Медіа-функції.Метатег                viewport. Інструменти розробника. Стратегія Mobile First.<br><br>                 <a href='C:/Users/masal/OneDrive/Документы/Учеба/Labs/Лабы WEB/ЛР4_Ларiна_IС-22/Project/Homepage.html'>Місце розташування проекту</a><br><br></p>";  
+                break;
+                
+                case 2:
+                newText = "  <strong>Десктопна версія</strong><br><br>     <p>        Вигляд сторінки:<br>        <img src='images/Screenshot_115.png', alt='Фото коду' width='70%'><br>        <img src='images/Screenshot_116.png', alt='Фото коду' width='70%'><br>        <img src='images/Screenshot_117.png', alt='Фото коду' width='70%'><br><br>        HTML:<br>        <img src='images/Screenshot_118.png', alt='Фото коду' width='70%'><br>        <img src='images/Screenshot_119.png', alt='Фото коду' width='70%'><br>        <img src='images/Screenshot_120.png', alt='Фото коду' width='70%'><br>        <img src='images/Screenshot_121.png', alt='Фото коду' width='70%'><br>        <img src='images/Screenshot_122.png', alt='Фото коду' width='70%'><br><br>        CSS:<br>        <img src='images/Screenshot_123.png', alt='Фото коду'><br>        <img src='images/Screenshot_124.png', alt='Фото коду'><br><br>            </p>";
+                break;
+
+                case 3:
+                newText = "<strong>Планшетна версія</strong><br><br>     <p>        Вигляд сторінки:<br>        <img src='images/Screenshot_115.png', alt='Фото коду' width='70%'><br>        <img src='images/Screenshot_116.png', alt='Фото коду' width='70%'><br>        <img src='images/Screenshot_117.png', alt='Фото коду' width='70%'><br><br>        HTML:<br>        <img src='images/Screenshot_118.png', alt='Фото коду' width='70%'><br>        <img src='images/Screenshot_119.png', alt='Фото коду' width='70%'><br>        <img src='images/Screenshot_120.png', alt='Фото коду' width='70%'><br>        <img src='images/Screenshot_121.png', alt='Фото коду' width='70%'><br>        <img src='images/Screenshot_122.png', alt='Фото коду' width='70%'><br><br>        CSS:<br>        <img src='images/Screenshot_125.png', alt='Фото коду' ><br>        <img src='images/Screenshot_126.png', alt='Фото коду'><br><br>            </p>";
+                break;
+
+                case 4:
+                newText = "<strong>Мобільна версія</strong><br><br>     <p>        Вигляд сторінки:<br>        <img src='images/Screenshot_115.png', alt='Фото коду' width='70%'><br>        <img src='images/Screenshot_116.png', alt='Фото коду' width='70%'><br>        <img src='images/Screenshot_117.png', alt='Фото коду' width='70%'><br><br>        HTML:<br>        <img src='images/Screenshot_118.png', alt='Фото коду' width='70%'><br>        <img src='images/Screenshot_119.png', alt='Фото коду' width='70%'><br>        <img src='images/Screenshot_120.png', alt='Фото коду' width='70%'><br>        <img src='images/Screenshot_121.png', alt='Фото коду' width='70%'><br>        <img src='images/Screenshot_122.png', alt='Фото коду' width='70%'><br><br>        CSS:<br>        <img src='images/Screenshot_127.png', alt='Фото коду'><br>        <img src='images/Screenshot_128.png', alt='Фото коду'><br>        <img src='images/Screenshot_129.png', alt='Фото коду'><br>        <img src='images/Screenshot_130.png', alt='Фото коду'><br>        <img src='images/Screenshot_131.png', alt='Фото коду'><br><br>            </p>";
+                break;
+
+                case 5:
+                newText = "<strong>Логічні оператори</strong><br><br>     <p>        CSS:<br>        <img src='images/Screenshot_132.png', alt='Фото коду'><br>        <img src='images/Screenshot_133.png', alt='Фото коду'><br><br>            </p>";
+                break;
+                
+                case 6:
+                newText = " <strong>Висновки</strong><br><br>     <p>        Адаптивна верстка — це важливий аспект сучасної веб-розробки. Вона дозволяє створити веб-сторінки, які добре виглядають і працюють на різних пристроях і екранах. Для досягнення цієї мети використовуються медіа-запити, метатег viewport і стратегія Mobile First. Медіа-запити дозволяють змінювати стилі веб-сторінки в залежності від розміру екрану. Метатег viewport дозволяє налаштувати специфічні параметри відображення сторінки на мобільних пристроях. Цей підхід допомагає створювати ефективні та швидкі веб-сторінки. Всі ці інструменти і концепції є важливими для розробки адаптивних веб-сайтів, які забезпечують якість та користувацький комфорт на будь-якому пристрої.    </p>";
+                break;
+            }
+             
+            
+            document.getElementById("shown").innerHTML = newText;
+        }
+
+    </script>
+
+</div>
+
+</body>
+</html>

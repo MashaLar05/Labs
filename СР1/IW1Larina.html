@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ukr">
+<head>
+    <style>
+        table#first_table
+        {
+            border: 2px solid darkblue;
+            border-collapse: collapse;
+            border-style: dashed;
+            padding: 10px;
+            text-align: center;
+        }
+        td#mark
+        {
+            text-align: left;
+            background-color: rgb(251, 211, 163);
+            border: 2px solid darkblue;
+            border-collapse: collapse;
+            border-style: dashed;
+        }
+        th#mark
+        {
+            background-color: rgb(243, 70, 70);
+        }
+        td#res_td
+        {
+            background-color: rgb(142, 255, 142);
+        }
+
+        
+        table#schedule
+        {
+            border: 3px solid black;
+            border-collapse: collapse;
+            background-color: rgb(179, 251, 251);
+        }
+        td#day
+        {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 15px;
+            text-align: center;
+        }
+        th#day
+        {
+            padding: 15px;
+            text-align: left;
+            background-color: rgb(87, 174, 254);
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+
+        a:link
+        {
+            color: green;
+            background-color:transparent;
+        } 
+        a:virited 
+        {
+            background-color: transparent;
+            color:red;
+            text-decoration: yellowgreen;
+        }
+        a:hover{
+            background-color: transparent;
+            color:rgb(21, 170, 170);
+        }
+        a:active 
+        {
+            background-color: rgb(56, 179, 138);
+            color:blue;
+        }
+    </style>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Самостійна робота №1</title>
+    <link rel="icon" type="image/x-icon" href="data:image/jpeg;base64,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">
+</head>
+
+<body>
+    <h3>Приклад заголовків</h3>
+    <h1>Перший заголовок</h1>
+    <h6>Найменш важливий заголовок</h6>
+    <hr>
+
+    <h3>Приклад параграфів</h3><br>
+    <p>Перший параграф</p>
+    <p>Другий параграф</p><br>
+    <hr>
+
+    <h3>Приклад посилань</h3><br>
+    <a href= "https://w3schoolsua.github.io/html/html_links.html"> Приклад посилання на сайт </a><br><br>
+    <a href="#The end">Посилання у межах web-сторінки</a><br>
+
+    <br><p>Приклад посилання у вигляді зображення</p>
+    <a href = "https://w3schoolsua.github.io/html/html_links.html" target="_blank">
+        <img src="https://w3schoolsua.github.io/svg/HTML5_icon.svg" alt = "HTML5" width="100" height="100">
+    </a>
+    <hr>
+    
+    <h3>Приклади зображень</h3>
+    <img src="https://w3schoolsua.github.io/svg/HTML5_icon.svg" alt = "HTML5" width="200" height="200"><br>
+    <img src="https://i.gifer.com/XOsX.gif" alt = "HTML5" style="float: left;  width:100px;height:100;"><br>
+    <p>Приклад зображення gif</p><br><br><br>
+    
+    <p>Приклад карти зображень (натиснути на Землю або на Місяць)</p>
+    <img src="data:image/jpeg;base64,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"
+    alt="Земля та Місяць" usemap="#space">
+    <map name="space">
+        <area shape="circle" coords="60, 64, 59" alt="Earth" href="https://uk.wikipedia.org/wiki/%D0%97%D0%B5%D0%BC%D0%BB%D1%8F">
+        <area shape="circle" coords="300, 66, 27" alt="Moon" href="https://uk.wikipedia.org/wiki/%D0%9C%D1%96%D1%81%D1%8F%D1%86%D1%8C_(%D1%81%D1%83%D0%BF%D1%83%D1%82%D0%BD%D0%B8%D0%BA)" target="_blank">
+    </map><br><br>
+
+
+    <a href="#background">Приклад фонового зображення</a><br>
+    
+    <hr>
+    <h3>Приклад кнопки</h3>
+    <button>Кнопка</button>
+    <hr>
+
+    <h3>Приклад списків</h3>
+    
+    <p><b>Впорядкований список:</b></p>
+    <p>Порядок виконання робіт:</p>
+    <ol>
+        <li>Самостійна робота №1</li>
+        <li>Лабораторна робота №1</li>
+        <li>Лабораторна робота №2</li>
+        <li>Лабораторна робота №3</li>
+        <li>Лабораторна робота №4</li>
+    </ol><br>
+    
+    <p><i>Невпорядкований список:</i></p>
+    <p>Завдання, що потрібго виконати</p>
+    <ul style="list-style-type: square;">
+        <li>Самостійна робота №1</li>
+        <li>Лабораторна робота №1</li>
+        <li>Лабораторна робота №2</li>
+        <li>Лабораторна робота №3</li>
+        <li>Лабораторна робота №4</li>
+    </ul><br>
+    <hr>
+    <p title = "Title">Приклад атрибуту "title"</p><br>
+
+    <p id = "background">Приклад форматованого тексту</p>
+    <a href = "https://maximum.fm/najpopulyarnishi-virshi-ukrayinskih-poetiv-yaki-znayut-u-vsomu-sviti_n169157">   Ліна Костенко – Крила</a>
+    <pre style="color: azure;">
+        <div style="background-image:url(https://wallpapers.com/images/featured/picture-en3dnh2zi84sgt3t.jpg);">
+        А й правда, крилатим ґрунту не треба.
+        Землі немає, то буде небо.
+        Немає поля, то буде воля.
+        Немає пари, то будуть хмари.
+        В цьому, напевно, правда пташина…
+        А як же людина? А що ж людина?
+        Живе на землі. Сама не літає.
+        А крила має. А крила має!
+        Вони, ті крила, не з пуху-пір'я,
+        А з правди, чесноти і довір'я.
+        У кого – з вірності у коханні.
+        У кого – з вічного поривання.
+        У кого – з щирості до роботи.
+        У кого – з щедрості на турботи.
+        У кого – з пісні, або з надії,
+        Або з поезії, або з мрії.
+        Людина нібито не літає…
+        А крила має. А крила має!
+        </div></pre><br>
+        <hr>
+        <br>
+
+        <p>Приклад таблиць</p>
+        <table id = "first_table" style="width:50%">
+            <caption><b>Бали за семестр з предметів</b></caption>
+            <tr style="height: 50px;">
+                <th id="mark">Назва предмету</th>
+                <th id="mark">Бал за семестр</th>
+            </tr>
+            <tr style="height: 30px;">
+                <td id = "mark">Інтернет-технології та проектуванн WEB-застосувань</td>
+                <td id = "mark">100</td>
+            </tr>
+            <tr style="height: 30px;">
+                <td id = "mark">Вступ до філософії</td>
+                <td id = "mark">95</td>
+            </tr>
+            <tr style="height: 30px;">
+                <td id = "mark">Програмування мікропроцесорних систем</td>
+                <td id = "mark">100</td>
+            </tr>
+            
+            <tr>
+                <td colspan="2" id="res_td"><pre>Бал у рейтингу:                                         98,33</pre></td>
+            </tr>
+        </table><br><br>
+
+
+        <table id="schedule">
+            <caption><strong>Розклад</strong></caption>
+            
+            <tr style="height: 50px;">
+                <th id="day">День</th>
+                <th id="day">Понеділок</th>
+                <th id="day">Вівторок</th>
+            </tr>
+            <tr>
+                <th id="day">1(8.30-10.00)</th>
+                <td id="day"></td>
+                <td id="day">Інтернет-технології та проектуванн WEB-застосувань</td>
+            </tr>
+            <tr>
+                <th id="day">2(10.25-11.55)</th>
+                <td id="day">Психологія конфліктів</td>
+                <td id="day">Програмування мікропроцесорних систем</td>
+            </tr>
+            <tr>
+                <th id="day">3(12.20-13.50)</th>
+                <td id="day"></td>
+                <td id="day">Теорія ймовірностей і математична статистика</td>
+            </tr>
+            <tr>
+                <th id="day">4(14.15-15.45)</th>
+                <td id="day"></td>
+                <td id="day">Права і свободи людини</td>
+            </tr>
+        </table><br>
+        <hr>
+
+        <h4>Приклад форм</h4>
+
+        <form style="background-color: bisque; width: 40%;">
+        <pre>
+<fieldset>
+    <legend style="border: 2px solid rgb(227, 84, 84);"> Форма </legend>
+Ім'я: <input type="text" name="name">  Прізвище: <input type="text" name="surname">
+        
+Стать:
+<input type="radio" name="gender" value="male"> Чоловік
+<input type="radio" name="gender" value="female"> Жінка<br>
+
+        <input type="submit" value="Запам'ятати">
+    </pre>
+</fieldset>
+        </form>
+        <p id= "The end"><b><i>Приклад посилань на кінець сторінки</i></b></p>
+
+         
+
+</body>
+</html>

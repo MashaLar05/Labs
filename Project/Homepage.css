@@ -1,0 +1,27 @@
+.content
+{
+    width: 100vw;
+    background: #E3E2DF;
+}
+
+header
+{
+    width: 100vw;
+    height: 20%;
+    flex-shrink: 0;
+    background: #E3AFBC;
+    border-radius: 10px;
+    border: 8px solid;
+    border-image: linear-gradient(150deg, #fa69698d, #e9030300) 0.6;
+}
+
+h1
+{
+    color: #2E0000;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2em;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -1.224px;
+}

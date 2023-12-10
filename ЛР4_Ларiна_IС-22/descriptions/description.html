@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ukr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Звіт до лабораторних робіт</title>
+    <link rel="stylesheet" type="text/css" href="description.css">
+</head>
+
+<body>
+<div class="fixed-header">
+
+
+<img src="images\фото_студента.jpg", alt="Фото студента", style="width: 80px; height: 80; margin-top: 10px; margin-right: 20px; float: right;">
+
+<h4>ЗВІТ ДО ЛАБОРАТОРНИХ РОБІТ</h4>
+<h4>З ДИСЦИПЛІНИ "ІНТЕРНЕТ ТЕХНОЛОГІЇ та ПРОЕКТУВАННЯ WEB-ЗАСТОСУВАНЬ"</h4>
+<p>Cтудентка групи ІС-22 Ларіна Марія</p>
+
+</div>
+    
+<div class="content">
+    <form>
+        <div style="white-space: nowrap;">
+            <button class="buttons">Лабораторна №1</button>
+            <button class="buttons"> <a href="description2.html">Лабораторна №2</a></button>
+            <button class="buttons"><a href="description3.html">Лабораторна №3</a></button>
+            <button class="buttons"><a href="description4.html">Лабораторна №4</a></button>
+            <button class="buttons">Лабораторна №5</button>
+            <button class="buttons">Лабораторна №6</button>
+            <button class="buttons">Лабораторна №7</button>
+            <button class="buttons">Лабораторна №8</button>
+            <button class="buttons">Лабораторна №9</button>
+            </div>
+
+        </form>
+
+    <form>
+        <fieldset class="main_form">
+            <p id="shown">
+                <strong>Опис предметного середовища</strong><br><br>
+
+                Цільова аудиторія: користувачі, які цікавляться танцями. Обмеження по віку, статі 
+                немає. Для загального розвитку.<br><br>
+                
+                Завдання: Розробити головну сторінку web-сайту для вивчення нових танцювальних па.<br><br>
+                
+                Дизайн і структура сторінки: Головна сторінка містить у собі посилання, зображення, форми та текст.
+                Структура сторінки включає в себе: зміст(на початку сторінки) та параграфи(текст та фото). Зверху 
+                сторінки фіксований заголовок(текст та форма).  
+                <br><br><a href='subject_area.html'>Опис предметної галузі</a>
+            </p>
+        </fieldset>
+    </form>
+    
+    <div>
+    <button class="left_buttons" onclick="change(1)">Опис предметного середовища</button><br>
+    <button class="left_buttons" onclick="change(2)">Тема, мета, місце розташування</button><br>
+    <button class="left_buttons" onclick="change(3)">Структура документу</button><br>
+    <button class="left_buttons" onclick="change(4)">HTML-код таблиць</button><br>
+    <button class="left_buttons" onclick="change(5)">HTML-код форм</button><br>
+    <button class="left_buttons" onclick="change(6)">HTML-код зображень</button><br>
+    <button class="left_buttons" onclick="change(7)">Висновки</button><br>
+    </div>
+
+
+
+    <script>
+        function change(button_number)
+        {
+            var newText;
+            switch(button_number)
+            {
+                case 1:
+                newText = "<strong>Опис предметного середовища</strong><br><br>Цільова аудиторія: користувачі, які цікавляться танцями. Обмеження по віку, статі немає. Для загального розвитку.<br><br>Завдання: Розробити головну сторінку web-сайту для вивчення нових танцювальних па.<br><br>Дизайн і структура сторінки: Головна сторінка містить у собі посилання, зображення, форми та текст.Структура сторінки включає в себе: зміст(на початку сторінки) та параграфи(текст та фото). Зверху сторінки фіксований заголовок(текст та форма). <br><br><a href='subject_area.html'>Опис предметної галузі</a>";  
+                break;
+                
+                case 2:
+                newText = "<strong>Тема, мета, місце розташування проекту</strong><br><br> Тема: СТРУКТУРА HTML-ДОКУМЕНТА. ВИБІР ПРЕДМЕТНОЇ ГАЛУЗІ. РОБОТА З ПОСИЛАННЯМИ, ТАБЛИЦЯМИ, ЗОБРАЖЕННЯМИ, СПИСКАМИ в HTML-ДОКУМЕНТІ. <br><br> Мета: придбати практичні навички роботи з HTML-документом, таблицями,зображеннями, посиланнями, списками, формами.Створити шаблон звітного HTML-документом для відображення результатів роботи всіх лабораторних робіт. <br><br> <a href='C:/Users/masal/OneDrive/Документы/Учеба/Labs/Лабы WEB/ЛР3_Ларіна_ІС-22/Homepage.html'>Місце розташування проекту</a><br><br>";
+                break;
+
+                case 3:
+                newText = "<strong>Структура документу</strong><br><br> <a href='Homepage.html'>Структура</a> <br><br> <img src='images/Screenshot_1.png', alt='Фото коду', style='width: 400px; height: 200px;'> <br> <img src='images/Screenshot_2.png' alt='Фото коду', style='width: 400px; height: 200px;'> <br> <img src='images/Screenshot_3.png' alt='Фото коду', style='width: 400px; height: 200px;'> <br> <img src='images/Screenshot_4.png' alt='Фото коду', style='width: 400px; height: 200px;'> <br> <img src='images/Screenshot_5.png' alt='Фото коду', style='width: 400px; height: 200px;'> <br> <img src='images/Screenshot_6.png' alt='Фото коду', style='width: 400px; height: 200px;'> <br> <img src='images/Screenshot_7.png' alt='Фото коду', style='width: 400px; height: 200px;'>";
+                break;
+
+                case 4:
+                newText = "<strong>HTML-код таблиць</strong><br><br> Структури таблиць немає, оскільки при створені головної сторінки таблиці не використовувались.";
+                break;
+
+                case 5:
+                newText = "<strong>HTML-код форм</strong><br><br> <img src='images/Screenshot_8.png', alt='Фото коду', style='width: 600px; height: 100px;'> <br> <img src='images/Screenshot_9.png', alt='Фото коду', style='width: 500px; height: 200px;'> <br> <img src='images/Screenshot_10.png', alt='Фото коду', style='width: 600px; height: 200px;'> <br> <img src='images/Screenshot_11.png', alt='Фото коду', style='width: 600px; height: 400px;'>";
+                break;
+                
+                case 6:
+                newText = "<strong>HTML-код зображень</strong><br><br> <br><br> <img src='images/Screenshot_12.png', alt='Фото коду', style='width: 600px; height: 100px;'> <br> <img src='images/Screenshot_13.png', alt='Фото коду', style='width: 500px; height: 500px;'> <br> <img src='images/Screenshot_14.png', alt='Фото коду', style='width: 600px; height: 100px;'> <br> <img src='images/Screenshot_15.png', alt='Фото коду', style='width: 500px; height: 400px;'> <br> <img src='images/Screenshot_16.png', alt='Фото коду', style='width: 600px; height: 100px;'> <br> <img src='images/Screenshot_17.png', alt='Фото коду', style='width: 500px; height: 500px;'>";
+                break;
+
+                case 7:
+                newText = "<strong>Висновки</strong><br><br> В рамках даної роботи ми досліджували структуру HTML-документа та вивчали основні аспекти роботи з ним. Основні теми включали в себе роботу з посиланнями, таблицями, зображеннями та списками. Ми навчилися створювати посилання, які дозволяють нам навігувати між різними сторінками в Інтернеті або всередині власного документа. Ми вивчили, як створювати таблиці для відображення даних в організованому вигляді та робили їх стилізацію за допомогою CSS. Зображення стали невід'ємною частиною веб-сайтів, і ми навчилися вставляти їх в HTML-документи та керувати їхніми параметрами. Також ми опрацювали різні типи списків, такі як нумеровані та марковані, для організації вмісту на сторінці. Ми зрозуміли важливість правильної структури документа та використання HTML-тегів для досягнення потрібного візуального вигляду та функціональності. У процесі вивчення та практичного застосування HTML ми здобули цінні навички, які допоможуть нам створювати веб-сторінки та представляти інформацію в Інтернеті. Ці знання стануть основою для подальшої роботи в галузі веб-розробки та впровадження нових проектів.";
+                break;
+            }
+             
+            
+            document.getElementById("shown").innerHTML = newText;
+        }
+
+    </script>
+
+</div>
+
+</body>
+</html>

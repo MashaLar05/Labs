@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Independent work 2.1</title>
+
+    <script src="https://kit.fontawesome.com/0841b2b90e.js"></script>
+    <style>
+    /*Приклад коментаря*/
+
+    h1,h2
+    {
+        color: blue;
+        text-align: center;
+    }
+
+    h3
+    {
+        width: 40%;
+        margin-left:30%;
+        text-align: center;
+        color: black;
+        background-color: rgba(255, 228, 196, 0.4);
+        padding: 5px;
+    }
+
+    .color_red_class
+    {
+        text-align: left;
+        color: red;
+        background-color: rgb(166, 249, 163);
+    }
+
+    *
+    {
+        font-family: 'Times New Roman', Times, serif;
+        padding: 5px;
+        margin: 3px;
+    }
+
+    #background
+    {
+        padding: 10px;
+        background-attachment:scroll;
+    }
+
+    p.indentation
+    {
+        border: 1px black solid;
+    }
+    
+    p.block
+    {
+        width: 200px;
+        height: 50px;
+        border: 20px solid rgb(70, 169, 255);
+        padding: 20px;
+        margin: 20px;
+        background-color: rgb(177, 241, 255);
+        text-align: center;
+    }
+
+    a:link.link, a:visited.link
+    {
+        background-color: white;
+        color: black;
+        border: 2px solid rgb(0, 55, 128);
+        margin: 40px;
+        padding:  10px;
+        text-align: center;
+    }
+    
+    a:hover.link, a:active.link
+    {
+        background-color: rgb(0, 55, 128);
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: small;
+        color: beige;
+    }
+    
+    ul.last
+    {
+        width: 200px;
+        background: #c2ff33;
+        padding: 20;
+    }
+
+    ul li.last
+    {
+        background: #e6ebb4;
+        margin: 5px;
+    }
+
+    table
+    {
+        border: 1px solid rgba(0, 0, 0, 0.75);
+        width: 90%;
+        padding: 5px;
+        margin: 10px;
+        background-color: rgb(168, 208, 254);
+        vertical-align: middle;
+    }
+
+    td 
+    {
+        border: 1px solid rgba(0, 0, 0, 0.75);
+        background-color: white;
+        text-align: left;
+    }
+
+    th, th.title
+    {
+        border: 1px solid rgba(0, 0, 0, 0.75);
+        background-color: white;
+        text-align: center;
+        color: rgb(21, 0, 180);
+    }
+
+    
+    td:hover 
+    {
+        background-color:#dadada;
+    }
+
+    @keyframes hi_animation
+    {
+        0%{background-color: rgba(0, 255, 255, 0); left: -50px; top:0px}
+        /*15%{background-color: rgba(0, 255, 255, 0.8); left: 0px; top:0px}*/
+        25%{background-color: rgb(1, 22, 255, 0.8); left:25%; top:0px}
+        50%{background-color: rgb(136, 1, 255, 0.8); left:25%; top:100px}
+        /*95%{background-color: rgb(255, 81, 1, 0.8); left:120%; top:100px}*/
+        100%{background-color: rgba(1, 158, 255, 0); left:95%; top:100px}
+    }
+
+    div.animation
+    {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: aqua;
+        position: relative;
+        animation: hi_animation 4s  infinite;
+    }
+
+    .tooltip 
+    {
+        position: relative;
+        display: inline-block;
+        border-bottom: 1px dotted rgba(95, 78, 255, 0.5);
+    }
+
+    .tooltip .tooltiptext {
+        visibility: hidden;
+        width: 120px;
+        background-color: rgba(95, 78, 255, 0.5);
+        color: #fff;
+        text-align: center;
+        border-radius: 15px/70px;
+        padding: 5px 0;
+        position: absolute;
+        top: -5px;
+        right: -50%;
+        z-index: 1;
+    }
+
+    .tooltip .tooltiptext::after 
+    {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: 100%;
+        margin-top: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color:transparent rgba(95, 78, 255, 0.5) transparent transparent;
+    }
+
+    .tooltip:hover .tooltiptext 
+    {
+        visibility: visible;
+    }
+
+
+    .button 
+    {
+        background-color: #ff00e66c;
+        border: double 2 px sienna;
+        color: white;
+        padding: 15px 30px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+    }
+
+    .pagination 
+    {
+        display: inline-block;
+    }
+
+    .pagination a 
+    {
+        border: none;
+        color: black;
+        float: left;
+        padding: 8px 16px;
+        text-decoration: none;
+    }
+
+    .pagination a.active 
+    {
+        background-color: #002affb3;
+        border-radius: 25%;
+        color: white;
+    }
+
+    .pagination a:hover:not(.active)   
+    {
+        border: none;
+        background-color: #91fdff5a;
+    }
+
+    .newspaper 
+    {
+        width: 50%;
+        column-count: 2;
+        column-gap: 50px;
+        column-rule: 2px double darkblue ;
+    }
+    h4
+    {
+        column-span: all;
+    }
+
+    .dropdown 
+    {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content 
+    {
+        display: none;
+        position: absolute;
+        background-color: #ffc0c0b6;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.3);
+        padding: 10px;
+        z-index: 1;
+    }
+
+    .dropdown:hover .dropdown-content 
+    {
+        display: block;
+    }
+
+    .dropdown-content a:hover 
+    {
+        background-color: #ffc0c0b6
+    }
+
+    .dropdown-content a 
+    {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    div.box
+    {
+        width: 200px;
+        height: 100px;
+        padding: 15px;
+        background-color: rgb(80, 255, 200);
+        box-shadow: 10px 10px 5px rgb(230, 173, 225);
+    }
+
+    div.transitions 
+    {
+        width: 100px;
+        height: 100px;
+        background: rgb(1, 238, 255);
+        border-radius: 15px/70px;
+        transition: width 2s;
+    }
+
+    div.transitions:hover 
+    {
+        margin-left: 100px;
+        width: 300px;
+    }
+
+    div.test 
+    {
+        white-space: nowrap; 
+        width: 100px; 
+        overflow: hidden; 
+    }
+
+    div.test:hover 
+    {
+        overflow: visible;
+    }
+
+    </style>
+
+</head>
+<body>
+    
+    <header>
+    <h1>Самостійна робота №2.1</h1>
+    <h2>До Лекції №2</h2>
+    </header>
+    
+    <section>
+    
+    <div id="start">
+    <h3>Cелектори</h3><br>
+    <p>Приклад використання селектору елементу</p><br>
+    <p class="color_red_class">Приклад використання селектору class</p><br>
+    </div>
+
+    <div>
+    <h3>Кольори</h3><br>
+    <ul>
+    <p>Приклад різного використання кольорів</p><br>
+    <li style="color: rgb(26, 171, 171);">Кольору тексту</li>
+    <li style="background-color: aquamarine; width: 8%;">Кольору фону</li>
+    <li style="border: 1px solid darkmagenta; width: 9%;">Кольору межі</li>
+    </ul>
+    </div>
+
+    <div>
+    <h3>Фони</h3><br>
+    <p id="background", style="background-color: tomato;">Просто колір в якості фону для параграфу</p><br>
+    <p id="background", style="background-image: url(https://img.freepik.com/free-vector/winter-blue-and-pink-gradient-background-vector_53876-117276.jpg);background-repeat: no-repeat;">Фото в якості фону для параграфу</p><br>
+    <p id="background", style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlkyYclGwhZ-fos5HfH4hPgm6-EpBKwPHyEg&usqp=CAU); background-repeat: repeat-x;">Фото, яке повторюється горизонтально, в якості фону для параграфу</p><br>
+    </div>
+    
+    <div>
+    <h3>Межі</h3><br>
+    <p>Приклад різних меж</p><br>
+    <ul>
+        <li style="border: 1px; border-style: dotted;">Межа крапками</li>
+        <li style="border: 1px; border-style: solid;">Межа суцільна</li>
+        <li style="border: 1px; border-style: dotted solid dotted solid;">Різна межа</li>
+        <li style="border-style: solid; border-width: 5px;">Межа суцільна товста</li>
+        <li style="border-style: solid; border-width: medium;">Межа суцільна середня</li>
+        <li style="border-style: solid; border-width: thin;">Межа суцільна тонка</li>
+        <li style="border-style: solid; border-width: thin; border-radius: 4px;">Межа суцільна заокруглена</li>
+        <li style="border-style: dotted solid dotted solid; border-radius: 3px; border-top-color: blue; border-top-width: 5px; border-right-color: brown; border-right-width: 7px; border-bottom-color: rgb(59, 207, 26); border-bottom-width: medium; border-left-color: black; border-left-width: 1px;">Межа</li>
+    </ul>
+    </div>
+
+    <div>
+    <h3>Maging, Padding, висота, ширина</h3><br>
+    <p class="indentation" style="margin: 20px;">Цей параграф має поле 20рх</p><br>
+    <p class="indentation" style="margin-right: 30px;">Цей параграф має поле справа 30рх</p><br>
+    <p class="indentation" style="padding: 20px;">Цей параграф має внутрішній відступ 20рх</p><br>
+    <p class="indentation" style="padding-left: 40px;">Цей параграф має внутрішній відступ зліва 40рх</p><br>
+    <p class="indentation" style="height: 200px;">Цей параграф має висоту 200рх</p><br>
+    <p class="indentation" style="width: 20%;">Цей параграф має ширину 20%</p><br>
+    </div>
+
+    <div>
+    <h3>Блочна модель</h3><br>
+    <p class="block">Приклад блочної моделі</p><br>
+    </div>
+
+    <div>
+    <h3>Іконки</h3><br>
+    <i class="fas fa-cloud"></i>
+    <i class="fas fa-heart"></i>
+    <i class="fas fa-car"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-umbrella"></i>
+    </div>
+    
+    <div>
+    <h3>Посилання</h3><br>
+    <a class="link" href="https://w3schoolsua.github.io/css/css_link.html#gsc.tab=0" target="_blank">Це посилання на сторінку</a><br><br>
+    </div>
+
+    <div>
+    <h3>Списки</h3><br>
+    <ul class="last" ,style="list-style: circle outside">
+        <li class="last">Один</li>
+        <li class="last">Два</li>
+        <li class="last">Три</li>
+    </ul><br>
+    </div>
+    </section>
+    
+<section style="overflow-x: auto;">
+
+    <h3>Таблиці.Межі</h3>
+    <br>
+    
+    <p>Приклад таблиць на основі розкладу</p>
+    <table>
+        <caption><strong>Розклад</strong></caption>
+        
+        <tr >
+            <th>День</th>
+            <th>Понеділок</th>
+            <th>Вівторок</th>
+            <th>Середа</th>
+            <th>Четвер</th>
+            <th>П'ятниця</th>
+        </tr>
+        <tr>
+            <th class="title">1 (8.30-10.00)</th>
+            <td></td>
+            <td>Інтернет-технології та проектуванн WEB-застосувань</td>
+            <td>Програмування мікропроцесорних систем</td>
+            <td></td>
+            <td></td>
+
+        </tr>
+        <tr>
+            <th class="title">2 (10.25-11.55)</th>
+            <td>Психологія конфліктів</td>
+            <td>Програмування мікропроцесорних систем</td>
+            <td>Теорія ймовірностей і математична статистика</td>
+            <td>Вища математика</td>
+            <td>Практичний курс іноземної мови</td>
+        </tr>
+        <tr>
+            <th class="title">3 (12.20-13.50)</th>
+            <td></td>
+            <td>Теорія ймовірностей і математична статистика</td>
+            <td>Інтернет-технології та проектуванн WEB-застосувань</td>
+            <td></td>
+            <td>Вища математика</td>
+        </tr>
+        <tr>
+            <th class="title">4 (14.15-15.45)</th>
+            <td></td>
+            <td>Права і свободи людини</td>
+            <td>Права і свободи людини</td>
+            <td></td>
+            <td>Бази даних</td>
+        </tr>
+        <tr>
+            <th class="title">5 (16.00-17.30)</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>Бази даних</td>
+            <td></td>
+        </tr>
+    </table><br>
+    
+</section>
+
+
+    <h3>CSS продвинутий</h3>
+    
+<p class="block" style="border-radius: 30px 70px/15px 5px 50px ;">Приклад заокруглених кутів</p>
+
+
+<div class="tooltip">Приклад анімації <span class="tooltiptext">та підказок</span>(навести на текст)</div>
+<div class="animation"></div>
+
+<div>
+    <a href="https://www.w3schools.com/css/css3_buttons.asp" class="button">Кнопка</a>
+</div><br>
+
+
+
+<div class="pagination">
+    <a href="#start">&laquo;</a>
+    <a href="https://www.w3schools.com/css/css3_pagination.asp">1</a>
+    <a class="active" href="#">2</a>
+    <a href="https://www.w3schools.com/css/css3_multiple_columns.asp">3</a>
+    <a href="#finish">&raquo;</a>
+</div>
+
+<div class="newspaper">
+    <h4>Приклад використання стовпців</h4>
+    Стаття — це жанр журналістики, в якому автор ставить завдання проаналізувати суспільні ситуації, процеси, явища, перш за все з точки зору закономірностей, що лежать в їх основі.
+    Такому жанру як стаття властива ширина практичних узагальнень, глибокий аналіз фактів і явищ, чітка соціальна спрямованість. У статті автор розглядає окремі ситуації як частину ширшого явища. Автор аргументує і вибудовує свою позицію через систему фактів.
+    У статті висловлюється розгорнута аргументована концепція автора або редакції з приводу актуальної соціологічної проблеми. Також в статті журналіст обов'язково повинен інтерпретувати факти (це можуть бути цифри, додаткова інформація, яка буде правильно розставляти акценти і яскраво розкривати суть питання).
+    Відмінним аспектом статті є її готовність. Якщо підготовлюваний матеріал так і не був опублікований (не вийшов в тираж, не набув поширення), то така праця відносити до статті некоректно. Швидше за все цю роботу можна назвати чернеткою або заготівлею. Тому метою будь-якої статті є поширення змісту в ній інформації.
+</div><br>
+
+
+<div class="dropdown">
+    <span> Випадаючий текст</span>
+    <div class="dropdown-content">
+    <p>Приклад випадаючого тексту</p>
+    </div>
+  </div>
+
+  <div class="dropdown">
+    <button class="button" style="margin-left: 40px;"> Випадаючий список</button>
+    <div class="dropdown-content">
+    <a href="https://www.w3schools.com/css/css_dropdowns.asp">Випадаючий список</a>
+    <a href="https://www.w3schools.com/css/css3_animations.asp">CSS анімації</a>
+    <a href="https://www.w3schools.com/css/css3_buttons.asp">Кнопки CSS</a>
+    <a href="https://www.w3schools.com/css/css3_multiple_columns.asp">Створення стовпців CSS</a>
+    </div>
+  </div>
+
+<div class="box">
+    <p>Приклад рамки-тіні</p>
+    <p style="color: black; text-shadow: 3px 3px 6px #ff0000;">Приклад тіні тексту</p>
+</div>
+
+<div class="transitions"></div>
+
+<div class="test">Дуже довгий текст, що не вміщується</div>
+
+
+<div id="finish">
+    <h3 style="padding: 20px;">Кінець</h3>
+</div>
+
+</body>
+</html>

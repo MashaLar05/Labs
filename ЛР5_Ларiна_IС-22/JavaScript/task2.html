@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="task2.js"></script>
+    <link rel="stylesheet" type="text/css" href="task2.css">
+    <title>Text editor</title>
+</head>
+
+<body>
+    <section> 
+        <form>
+            <fieldset>
+                <div class="editor">
+                    <div id="input_text"class="text" contenteditable="true"></div>
+                    <div id="buttons">
+                        <button class="center_buttons" onclick="MakeBold()"><strong>B</strong></button><br>
+                        <button class="center_buttons" onclick="MakeItalic()"><i>I</i></button><br>
+                        <button class="center_buttons" onclick="MakeUnderline()"><u>U</u></button><br>
+                        <select class="center_buttons" onclick="ChangeColor(value)">
+                            <option value="black">Black</option>
+                            <option value="white">White</option>
+                            <option value="red">Red</option>
+                            <option value="green">Green</option>
+                            <option value="blue">Blue</option>
+                            <option value="brown">Brown</option>
+                            <option value="yellow">Yellow</option>
+                            <option value="purple">Purple</option>
+                            <option value="fuchsia">Fuchsia</option>
+                            <option value="deepskyblue">Deepskyblue</option>
+                        </select><br>
+                        <button class="center_buttons" onclick="MakeUppercase()">Upper</button><br>
+                        <button class="center_buttons" onclick="MakeLowercase()">Lower</button><br>
+                    </div>
+
+                    <div id="output_text"class="text" contenteditable="true"></div>
+
+                </div>
+
+                <input type="submit" class="button" value="Очистити" onclick="Clear()">
+            </fieldset>
+        </form>
+
+    </section>
+</body>
+</html>

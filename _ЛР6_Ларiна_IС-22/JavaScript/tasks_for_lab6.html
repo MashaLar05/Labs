@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="tasks_for_lab6.js"></script>
+    <link rel="stylesheet" type="text/css" href="tasks_for_lab6.css">
+    <title>Lab 6</title>
+</head>
+
+
+<body>
+    <header>
+        <h1>Лабораторна робота № 6</h1>
+        <h3>№варіантів : 2 ,4, 6, 8, 9,10</h3>
+    </header>
+
+    <section>
+        <h4>Завдання №2</h4>
+        <p>Напишіть функцію getProductDetails, яка приймає
+            ідентифікатор товару productId та дві колбек-функції
+            successCallback та errorCallback.
+            
+            // Функція getProductDetails повинна отримати деталі
+            про вказаний товар та передати їх у successCallback.
+            // У випадку якщо товар не знайдено, викликається
+            errorCallback і передається повідомлення про
+            помилку.</p>
+        
+            <input class = "fields" type="text", id="inputField_2" >
+            <button onclick="performSearch()">Пошук</button>
+            <input class = "fields" type="text", id="outputField_2" >
+    </section>
+
+    <section>
+        <h4>Завдання №4</h4>
+        <p>З об'єкту concerts отримати масив, який буде
+            містити лише імена міст.
+            З масиву потрібно прибрати міста, в яких концерт уже
+            пройшов i відсортувати їх у хронологічному порядку.
+            Результат вивести у консоль.</p>
+        <div id="outputField_4"class="text" contenteditable="true"></div>
+        <button onclick="concertsSearch()">Вивести</button>
+
+    </section>
+
+    <section>
+        <h4>Завдання №6</h4>
+        <p>Напишіть функцію, яка приймає массив об'єктів і
+            повертає новий массив об'єктів, у якому є знижка на 30 %
+            на всі медикаменти ціна, яких перевищує 300 грн у
+            масиві. Надайте ід для кожного медикамента</p>
+            <div id="outputField_6"class="text" contenteditable="true"></div>
+            <button onclick="medicinesChange(1)">Початкова ціна</button>
+            <button onclick="medicinesChange(2)">Нова ціна</button>
+
+            <!-- Noshpa 170, Analgin 55, Quanil 310, Alphacholine 390 -->
+    </section>
+
+
+    <section>
+        <h4>Завдання №8</h4>
+        <p>Напиши функцію конструктор Storage який створює
+            об'єкти Для управління складом товарів. При виклику
+            отримуватиме один агрумент - початковий масив
+            товарів, і записувати їх у властивість items.
+            Додай методи класу: getItems() - повертайте масив
+            товарів addItems(item) - отримує новий товар та додає
+            його до поточних removeItem(item) - отримує товар і,
+            якщо він є, видаляє його з поточних</p>
+            <div id="inputField_8"class="text" contenteditable="true"></div>
+            <button onclick="changeProducts(1)">Передивитися все</button>
+            <button onclick="changeProducts(2)">Додати</button>
+            <button onclick="changeProducts(3)">Видалити</button>
+            <div id="outputField_8"class="text" contenteditable="true"></div>
+    </section>
+
+
+    <section>
+        <h4>Завдання №9</h4>
+        <p>Поверніть об'єкт, в якому вказано кількість тегів.</p>
+        <div id="outputField_9"class="text" contenteditable="true"></div>
+        <button onclick="countTags()">Порахувати</button>
+            
+    </section>
+
+
+    <section>
+        <h4>Завдання №10</h4>
+        <p>Напишіть функцію checkBrackets(str) яка приймає
+            рядок жс коду (someFn)  і перевіряє правильність
+            закриття дужок () {} []
+            Якщо рядок містить коректний код функція повертає true.
+            В іншому випадку повертає false</p>
+
+        <div id="inputField_10"class="text" contenteditable="true"></div>
+        <button onclick="checkBrackets_output()">Передивитися все</button>
+        <div id="outputField_10"class="text" contenteditable="true"></div>
+            
+    </section>
+
+</body>
+</html>

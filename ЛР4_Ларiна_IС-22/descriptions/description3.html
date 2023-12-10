@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ukr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Звіт до лабораторних робіт</title>
+    <link rel="stylesheet" type="text/css" href="description.css">
+</head>
+
+<body>
+<div class="fixed-header">
+
+
+<img src="images\фото_студента.jpg", alt="Фото студента", style="width: 80px; height: 80; margin-top: 10px; margin-right: 20px; float: right;">
+
+<h4>ЗВІТ ДО ЛАБОРАТОРНИХ РОБІТ</h4>
+<h4>З ДИСЦИПЛІНИ "ІНТЕРНЕТ ТЕХНОЛОГІЇ та ПРОЕКТУВАННЯ WEB-ЗАСТОСУВАНЬ"</h4>
+<p>Cтудентка групи ІС-22 Ларіна Марія</p>
+
+</div>
+    
+<div class="content">
+    <form>
+        <div style="white-space: nowrap;">
+        <button class="buttons"><a href="description.html">Лабораторна №1</a></button>
+        <button class="buttons"><a href="description2.html">Лабораторна №2</a></button>
+        <button class="buttons">Лабораторна №3</button>
+        <button class="buttons"><a href="description4.html">Лабораторна №4</a></button>
+        <button class="buttons">Лабораторна №5</button>
+        <button class="buttons">Лабораторна №6</button>
+        <button class="buttons">Лабораторна №7</button>
+        <button class="buttons">Лабораторна №8</button>
+        <button class="buttons">Лабораторна №9</button>
+        </div>
+    
+    </form>
+
+    <form>
+        <fieldset class="main_form">
+            <p id="shown">
+                <strong>Тема, мета, місце розташування проекту</strong><br><br> Тема: ВЕРСТКА HTML-ДОКУМЕНТУ. БЛОКОВА ВЕРСТКА. ВЕРСТКА
+                ЗАСОБАМИ CSS та FLEXBOX. <br><br> Мета:<br>
+                ⎯ придбати практичні навички роботи верстки сторінок засобами CSS, верстки на
+                основі плаваючих елементів, з’ясувати переваги та недоліки типів макетів веб-
+                сторінок<br>
+                ⎯ придбати практичні навички роботи верстки сторінок засобами CSS та FLEXBOX<br><br> <a href='C:\Users\masal\OneDrive\Документы\Учеба\Labs\Лабы WEB\ЛР3__Ларiна_IС-22\Homepage.html'>Місце розташування проекту</a><br><br>
+            </p>
+        </fieldset>
+    </form>
+    
+    <div>
+    <button class="left_buttons" onclick="change(1)">Тема, мета, місце розташування</button><br>
+    <button class="left_buttons" onclick="change(2)">Завдання №1</button><br>
+    <button class="left_buttons" onclick="change(3)">Завдання №2</button><br>
+    <button class="left_buttons" onclick="change(4)">Фіксована таблична верстка</button><br>
+    <button class="left_buttons" onclick="change(5)">Гумова таблична верстка</button><br>
+    <button class="left_buttons" onclick="change(6)">Фіксована блокова верстка</button><br>
+    <button class="left_buttons" onclick="change(7)">Гумова блокова верстка</button><br>
+    <button class="left_buttons" onclick="change(8)">Завдання №3</button><br>
+    <button class="left_buttons" onclick="change(9)">Скріншот сторінки</button><br>
+    <button class="left_buttons" onclick="change(10)">HTML-код</button><br>
+    <button class="left_buttons" onclick="change(11)">CSS-код</button><br>
+    <button class="left_buttons" onclick="change(12)">Висновки</button><br>
+    </div>
+
+
+    <script>
+        function change(button_number)
+        {
+            var newText;
+            switch(button_number)
+            {
+                case 1:
+                newText = "<strong>Тема, мета, місце розташування проекту</strong><br><br> Тема: ВЕРСТКА HTML-ДОКУМЕНТУ. БЛОКОВА ВЕРСТКА. ВЕРСТКА                ЗАСОБАМИ CSS та FLEXBOX. <br><br> Мета:<br>                ⎯ придбати практичні навички роботи верстки сторінок засобами CSS, верстки на                основі плаваючих елементів, з’ясувати переваги та недоліки типів макетів веб-                сторінок<br>                ⎯ придбати практичні навички роботи верстки сторінок засобами CSS та FLEXBOX<br><br> <a href='C:/Users/masal/OneDrive/Документы/Учеба/Labs/Лабы WEB/ЛР3__Ларiна_IС-22/Homepage.html'>Місце розташування проекту</a><br><br>";  
+                break;
+                
+                case 2:
+                newText = " <strong>Завдання №1</strong><br><br>    <p>       Макет<br>    <img src='images/Screenshot_107.png', alt='Фото коду' width='30%'><br><br>   <img src='images/Screenshot_66.png', alt='Фото коду' width='70%'><br><br>                    <img src='images/Screenshot_67.png', alt='Фото коду' width='70%'><br>         <img src='images/Screenshot_68.png', alt='Фото коду' width='70%'><br>         <img src='images/Screenshot_69.png', alt='Фото коду' width='70%'><br>         <img src='images/Screenshot_70.png', alt='Фото коду' width='70%'><br>     </p>";
+                break;
+
+                case 3:
+                newText = " <strong>Завдання №2</strong><br><br>    <p>     <img src='images/Screenshot_91.png', alt='Фото коду' width='20%'><br><br>       <a href='C:/Users/masal/OneDrive/Документы/Учеба/Labs/Лабы WEB/ЛР3__Ларiна_IС-22/Fixed tabular layout/Fixed _tabular.html'>Фіксована таблична верстка</a><br><br>        <a href='C:/Users/masal/OneDrive/Документы/Учеба/Labs/Лабы WEB/ЛР3__Ларiна_IС-22/Rubber table layout/Rubber_table.html'>Гумова таблична верстка</a><br><br><br>    <img src='images/Screenshot_92.png', alt='Фото коду' width='20%'><br><br>       <a href='C:/Users/masal/OneDrive/Документы/Учеба/Labs/Лабы WEB/ЛР3__Ларiна_IС-22/Fixed block layout/Fixed_block.html'>Фіксована блокова верстка</a><br><br>        <a href='C:/Users/masal/OneDrive/Документы/Учеба/Labs/Лабы WEB/ЛР3__Ларiна_IС-22/Rubber block layout/Rubber_block.html'>Гумова блокова верстка</a><br><br>    </p>";
+                break;
+
+                case 4:
+                newText = "<strong>Фіксована таблична верстка</strong><br><br>    <p>              <img src='images/Screenshot_111.png', alt='Фото коду' width='70%'><br><br>        HTML:<br>        <img src='images/Screenshot_112.png', alt='Фото коду' width='70%'><br><br>        CSS:<br>        <img src='images/Screenshot_113.png', alt='Фото коду' width='40%'><br></p>";
+                break;
+
+                case 5:
+                newText = "<strong>Гумова таблична верстка</strong><br><br>    <p>       <img src='images/Screenshot_111.png', alt='Фото коду' width='70%'><br><br>        HTML:<br>        <img src='images/Screenshot_112.png', alt='Фото коду' width='70%'><br><br>        CSS:<br>        <img src='images/Screenshot_114.png', alt='Фото коду' width='40%'><br></p>";
+                break;
+                
+                case 6:
+                newText = "<strong>Фіксована блокова верстка</strong><br><br>    <p>              <img src='images/108.png', alt='Фото коду' width='70%'><br><br>        HTML:<br>        <img src='images/Screenshot_108.png', alt='Фото коду' width='70%'><br><br>        CSS:<br>        <img src='images/Screenshot_109.png', alt='Фото коду' width='40%'><br></p>";
+                break;
+
+                case 7:
+                newText = "<strong>Гумова блокова верстка</strong><br><br>    <p>              <img src='images/108.png', alt='Фото коду' width='70%'><br><br>        HTML:<br>        <img src='images/Screenshot_108.png', alt='Фото коду' width='70%'><br><br>   CSS:<br>        <img src='images/Screenshot_110.png', alt='Фото коду' width='40%'><br></p>";
+                break;
+
+                case 8:
+                newText = " <strong>Завдання №3</strong><br><br>    <p>              <img src='images/Screenshot_93.png', alt='Фото коду' width='420px'><br>        <img src='images/Screenshot_94.png', alt='Фото коду' width='420px'><br><br>        <a href='C:/Users/masal/OneDrive/Документы/Учеба/Labs/Лабы WEB/ЛР3__Ларiна_IС-22/FLEXBOX/flexbox.html'>Місце розташування проекту</a>    </p>";
+                break;
+
+                case 9:
+                newText = " <strong>Скріншот сторінки</strong><br><br>    <p>              <img src='images/Screenshot_95.png', alt='Фото коду' width='70%'><br>        <img src='images/Screenshot_96.png', alt='Фото коду' width='70%'><br>        <img src='images/Screenshot_97.png', alt='Фото коду' width='70%'><br>    </p>";
+                break;
+
+                case 10:
+                newText = " <strong>HTML-код</strong><br><br>    <p>              <img src='images/Screenshot_98.png', alt='Фото коду' width='70%'><br>        <img src='images/Screenshot_99.png', alt='Фото коду' width='70%'><br>        <img src='images/Screenshot_100.png', alt='Фото коду' width='70%'><br>        <img src='images/Screenshot_101.png', alt='Фото коду' width='70%'><br>        <img src='images/Screenshot_102.png', alt='Фото коду' width='70%'><br>    </p>";
+                break;
+
+                case 11:
+                newText = "<strong>CSS-код</strong><br><br>    <p>              <img src='images/Screenshot_103.png', alt='Фото коду'><br>        <img src='images/Screenshot_104.png', alt='Фото коду'><br>        <img src='images/Screenshot_105.png', alt='Фото коду'><br>        <img src='images/Screenshot_106.png', alt='Фото коду'><br>    </p>";
+                break;
+
+                case 12:
+                newText = "<strong>Висновки</strong><br><br>    <p>              В створенні веб-додатків і веб-сайтів існують два основних методи організації верстки: за допомогою таблиць і за допомогою блоків (плаваючих блоків), а також за допомогою CSS Flexbox. Кожен з цих методів має свої переваги та недоліки, які варто враховувати при виборі методу для конкретного проекту. Обираючи між використанням таблиць та блоків для створення веб-додатків, важливо брати до уваги конкретні потреби проекту та рівень власного досвіду. Блоки зазвичай є більш сучасним та правильним підходом до верстки, зокрема для адаптивного дизайну. Однак використання таблиць може бути виправданим у деяких випадках, особливо для простих сторінок або для старих проектів, де підтримка старих браузерів є важливою.    </p>";
+                break;
+            }
+             
+            
+            document.getElementById("shown").innerHTML = newText;
+        }
+
+    </script>
+
+</div>
+
+</body>
+</html>
