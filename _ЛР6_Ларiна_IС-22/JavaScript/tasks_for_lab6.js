@@ -16,7 +16,7 @@ function getProductDetails(productId, successCallback, errorCallback)
         {
             errorCallback("Товар не знайдено");
         }
-    }, ); 
+    }, 200); 
 }
 
 
@@ -83,16 +83,22 @@ function medicinesChange(type)
     
     function formatMedicine(medicine) 
     {
-        return `Назва: ${medicine.name} Ціна: ${medicine.price}<br>`;
+        return `Назва: ${medicine.name} Ціна: ${medicine.price} <br>`;
     }
     
+    function newformatMedicine(medicine) 
+    {
+        return `Назва: ${medicine.name} Ціна: ${medicine.price} Id:${medicine.id} <br>`;
+    }
+    
+
     switch(type)
     {
         case 1:
             output.innerHTML = medicines.map(formatMedicine).join('');
             break;
         case 2:
-            output.innerHTML = newMedicines.map(formatMedicine).join('');
+            output.innerHTML = newMedicines.map(newformatMedicine).join('');
             break;
     }
 }
