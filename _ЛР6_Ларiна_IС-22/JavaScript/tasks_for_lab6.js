@@ -16,7 +16,7 @@ function getProductDetails(productId, successCallback, errorCallback)
         {
             errorCallback("Товар не знайдено");
         }
-    }, 300); 
+    }, ); 
 }
 
 
