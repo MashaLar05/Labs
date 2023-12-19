@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ukr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Звіт до лабораторних робіт</title>
+    <link rel="stylesheet" type="text/css" href="description.css">
+</head>
+
+<body>
+<div class="fixed-header">
+
+
+<img src="images\фото_студента.jpg", alt="Фото студента", style="width: 80px; height: 80; margin-top: 10px; margin-right: 20px; float: right;">
+
+<h4>ЗВІТ ДО ЛАБОРАТОРНИХ РОБІТ</h4>
+<h4>З ДИСЦИПЛІНИ "ІНТЕРНЕТ ТЕХНОЛОГІЇ та ПРОЕКТУВАННЯ WEB-ЗАСТОСУВАНЬ"</h4>
+<p>Cтудентка групи ІС-22 Ларіна Марія</p>
+
+</div>
+    
+<div class="content">
+    <form>
+        <div style="white-space: nowrap;">
+        <button class="buttons"><a href="description.html">Лабораторна №1</a></button>
+        <button class="buttons"><a href="description2.html">Лабораторна №2</a></button>
+        <button class="buttons"><a href="description3.html">Лабораторна №3</a></button>
+        <button class="buttons"><a href="description4.html">Лабораторна №4</a></button>
+        <button class="buttons"><a href="description5.html">Лабораторна №5</a></button>
+        <button class="buttons"><a href="description6.html">Лабораторна №6</a></button>
+        <button class="buttons">Лабораторна №7</button>
+        <button class="buttons">Лабораторна №8</button>
+        <button class="buttons">Лабораторна №9</button>
+        </div>
+    
+    </form>
+
+    <form>
+        <fieldset class="main_form">
+            <p id="shown">
+                <strong>Тема, мета, місце розташування проекту</strong><br><br> Тема: КЛАСИ. ОБ'ЄКТНА МОДЕЛЬ ДОКУМЕНТА (DOM). ПОДІЇ. ОБ'ЄКТ ПОДІЇ. ДЕЛЕГУВАННЯ ПОДІЙ. THROTTLE. МОДУЛЬНОСТЬ КОДУ<br><br> 
+                Мета:придбати практичні навички роботи з об'єктами. Методи об'єкта. Callback. Стрілочні функції. Стрілочні функції як колбеки​. Реалізація програм засовами мови JAVASCRIPT<br><br>                 
+                <a href='../lab7.html'>Місце розташування завдань</a><br><br>      
+            </p>
+        </fieldset>
+    </form>
+    
+    <div>
+    <button class="left_buttons" onclick="change(1)">Тема, мета, місце розташування</button><br>
+    <button class="left_buttons" onclick="change(2)">Завдання 1(1)</button><br>
+    <button class="left_buttons" onclick="change(3)">Завдання 2(3)</button><br>
+    <button class="left_buttons" onclick="change(4)">Завдання 3(5)</button><br>
+    <button class="left_buttons" onclick="change(5)">Завдання 4(7)</button><br>
+    <button class="left_buttons" onclick="change(6)">Завдання 5(8)</button><br>
+    <button class="left_buttons" onclick="change(7)">Завдання 6(9)</button><br>
+    <button class="left_buttons" onclick="change(8)">Завдання 7(10)</button><br>
+    <button class="left_buttons" onclick="change(9)">Висновки</button><br>
+    </div>            
+
+
+
+
+    
+
+
+    <script>
+        function change(button_number)
+        {
+            var newText;
+            switch(button_number)
+            {
+                case 1:
+                newText = "<strong>Тема, мета, місце розташування проекту</strong><br><br> Тема: КЛАСИ. ОБ'ЄКТНА МОДЕЛЬ ДОКУМЕНТА (DOM). ПОДІЇ. ОБ'ЄКТ ПОДІЇ. ДЕЛЕГУВАННЯ ПОДІЙ. THROTTLE. МОДУЛЬНОСТЬ КОДУ<br><br>                 Мета:придбати практичні навички роботи з об'єктами. Методи об'єкта. Callback. Стрілочні функції. Стрілочні функції як колбеки​. Реалізація програм засовами мови JAVASCRIPT<br><br>                                 <a href='../lab7.html'>Місце розташування завдань</a><br><br> ";  
+                break;
+                
+                case 2:
+                newText = "<strong>Завдання 1(1)</strong><br><br>     Постановка задачі: <br>      У звітному HTML-документі створити html-розміту,            яка складається з наступних елементів : текст, кнопка,            поле введення. Натискання на кнопку 'SHOW ME' має виводити                        значення з поля введення у консолі. У звітному HTML-документі відобразити скрін            програмного коду<br><br>          Результат виконання:<br>            <img src='images/Screenshot_169.png', alt='Фото коду' width='70%'><br><br>              HTML:<br>       <img src='images/Screenshot_170.png', alt='Фото коду'width='70%'><br><br>           CSS:<br>        <img src='images/Screenshot_171.png', alt='Фото коду'><br><br>               JavaScript:<br>     <img src='images/Screenshot_172.png', alt='Фото коду' width='70%'><br><br>";
+                break;
+
+                case 3:
+                newText = "   <strong>Завдання 2(3)</strong><br><br>     Постановка задачі: <br>      Кнопка 'Приховати' ховає текст , виводячи зірочки    замість введеної інформації, замінює назву кнопки на    'Розкрити', при повторному натисканні текст знову    стає доступним і кнопка набуває початкового вигляду.<br><br>          Результат виконання:<br>            <img src='images/Screenshot_173.png', alt='Фото коду'><br>     <img src='images/Screenshot_174.png', alt='Фото коду'><br><br>              HTML:<br>           <img src='images/Screenshot_178.png', alt='Фото коду'width='70%'><br><br>              CSS:<br>        <img src='images/Screenshot_171.png', alt='Фото коду'><br><br>               JavaScript:<br>     <img src='images/Screenshot_175.png', alt='Фото коду' width='70%'><br><br>";
+                break;
+
+                case 4:
+                newText = " <strong>Завдання 3(5)</strong><br><br>     Постановка задачі: <br>      Додайте слухач кліку на window і визначте чи            клікнув користувач у div з id='place'.            Примітка: Якщо користувач клікнув на зеленому            прямокутнику – у консолі виведе true. У             протилежному випадку - false<br><br>          Результат виконання:<br>            <img src='images/Screenshot_176.png', alt='Фото коду' width='70%'><br>     <img src='images/Screenshot_177.png', alt='Фото коду' width='70%'><br><br>              HTML:<br>       <img src='images/Screenshot_180.png', alt='Фото коду'width='70%'><br><br>              CSS:<br>        <img src='images/Screenshot_171.png', alt='Фото коду'><br><br>               JavaScript:<br>     <img src='images/Screenshot_179.png', alt='Фото коду' width='70%'><br><br>";
+                break;
+
+                case 5:
+                newText = " <strong>Завдання 4(7)</strong><br><br>     Постановка задачі: <br>      Напиши скрипт, який:<br>    1. Порахує і виведе в консоль кількість категорій    в ul#categories, тобто елементів li.item.<br>    2. Для кожного элемента li.item у    списку ul#categories, знайде і виведе в консоль    текст заголовку елемента (тегу &lt;h2&gt;) і кількість    елементів в категорії (усіх &lt;li&gt;, вкладених в    нього).<br><br>          Результат виконання:<br>            <img src='images/Screenshot_181.png', alt='Фото коду' width='70%'><br><br>              HTML:<br>       <img src='images/Screenshot_182.png', alt='Фото коду'width='70%'><br><br>              CSS:<br>        <img src='images/Screenshot_171.png', alt='Фото коду'><br><br>               JavaScript:<br>     <img src='images/Screenshot_183.png', alt='Фото коду' width='70%'><br><br>";
+                break;
+
+                case 6:
+                newText = "<strong>Завдання 5(8)</strong><br><br>     Постановка задачі: <br>      ННапиши скрипт управління формою логіна.<br>    1. Обробка відправлення форми form.login-form повинна відбуватися за подією submit.<br>2. Під час відправлення форми сторінка не повиннаперезавантажуватися.<br>3. Якщо при сабміті у формі є незаповнені поля,виводь alert з попередженням про те, що &#39;Allform fields must be filled in&#39;. Недодавай на інпути атрибут required, валідація маєвідбуватися саме через JS.<br>4. Якщо користувач заповнив усі поля і відправивформу, збери значення полів в об&#39;єкт з двома властивостями, де ключ — це ім&#39;я інпутів, а значення — відповідні значення цих інпутів, очищені від пробілів по краях. Для доступу до елементів форми використовуй властивість elements.<br> 5. При сабміті форми виведи об&#39;єкт із введеними даними в консоль і очисти значення полів форми методом reset.<br><br>           Результат виконання:<br>            <img src='images/Screenshot_184.png', alt='Фото коду' width='70%'><br>    <img src='images/Screenshot_185.png', alt='Фото коду' width='70%'><br><br>                    HTML:<br>       <img src='images/Screenshot_186.png', alt='Фото коду'width='70%'><br><br>              CSS:<br>        <img src='images/Screenshot_171.png', alt='Фото коду'><br><br>               JavaScript:<br>     <img src='images/Screenshot_187.png', alt='Фото коду' width='70%'><br><br>";
+                break;
+
+                case 7:
+                newText = "<strong>Завдання 6(9)</strong><br><br>     Постановка задачі: <br>      Напиши скрипт, який змінює колір фону            елемента &lt;body&gt; через інлайн-стиль по кліку            на button.change-color і задає це значення            кольору текстовим вмістом для span.color<br><br>          Результат виконання:<br>            <img src='images/Screenshot_188.png', alt='Фото коду' width='70%'><br><br>                    HTML:<br>       <img src='images/Screenshot_189.png', alt='Фото коду'width='70%'><br><br>              CSS:<br>        <img src='images/Screenshot_171.png', alt='Фото коду'><br><br>               JavaScript:<br>     <img src='images/Screenshot_190.png', alt='Фото коду' width='70%'><br><br>";
+                break;
+
+                case 8:
+                newText = " <strong>Завдання 7(10)</strong><br><br>     Постановка задачі: <br>      Напиши скрипт створення й очищення колекції            елементів з наступним функціоналом.            Є input, у який користувач вводить бажану кількість            елементів. Після натискання на кнопку Create має            рендеритися (додаватися в DOM) колекція з            відповідною кількістю елементів і очищатися значення            в інпуті. При повторному натисканні на            кнопку Create поверх старої колекції має рендеритись            нова. Після натискання на кнопку Destroy колекція            елементів має очищатися.<br><br>          Результат виконання:<br>            <img src='images/Screenshot_191.png', alt='Фото коду' ><br>    <img src='images/Screenshot_192.png', alt='Фото коду' ><br>    <img src='images/Screenshot_193.png', alt='Фото коду' ><br><br>                    HTML:<br>       <img src='images/Screenshot_194.png', alt='Фото коду'width='70%'><br><br>              CSS:<br>        <img src='images/Screenshot_171.png', alt='Фото коду'><br><br>               JavaScript:<br>     <img src='images/Screenshot_195.png', alt='Фото коду' width='70%'><br><br>";
+                break;
+
+                case 9:
+                newText = "<strong>Висновок</strong><br><br>     У процесі виконання лабораторної роботи ми ознайомились з різними аспектами роботи з JavaScript, такими як: класи та Об'єктна модель, DOM (Об'єктна модель документа), події та об'єкт події, делегування подій, модульність коду.";
+                break;
+            }
+             
+            
+            document.getElementById("shown").innerHTML = newText;
+        }
+
+    </script>
+
+</div>
+
+</body>
+</html>

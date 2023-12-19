@@ -69,6 +69,7 @@
     <section>
         <h4>Завдання 7</h4>
         <p>
+            Напиши скрипт, який: <br>1. Порахує і виведе в консоль кількість категорій в ul#categories, тобто елементів li.item. <br>2. Для кожного элемента li.item у списку ul#categories, знайде і виведе в консоль текст заголовку елемента (тегу &lt;h2&gt;) і кількість елементів в категорії (усіх &lt;li&gt;, вкладених в нього).
         </p>
 
         <div class="block_task7">
@@ -104,11 +105,9 @@
         </div>
 
         <div class="block_task7">
-            
             <div class="text" id="outputField_7" contenteditable="true"></div>
             <button onclick="Output_task7()">Вивести</button>
         </div>
-
     </section>
 
     <section>
@@ -127,43 +126,44 @@
             </label>
             <button type="submit">Log in</button>
         </form>
-            <div class="big_or_small"></div>
-            <button onclick="decrease()" id = "button_small">Зменшити</button>
-            <button onclick="increase()" id = "button_big">Збільшити</button>
-
     </section>
+
 
     <section>
         <h4>Завдання 9</h4>
-        <p>
+        <p>Напиши скрипт, який змінює колір фону
+            елемента &lt;body&gt; через інлайн-стиль по кліку
+            на button.change-color і задає це значення
+            кольору текстовим вмістом для span.color.
         </p>
         <div class="widget">
         <p>Background color: <span class="color">-</span></p>
         <button type="button" class="change-color">Change color</button>
         </div>
 
-            <div class="big_or_small"></div>
-            <button onclick="decrease()" id = "button_small">Зменшити</button>
-            <button onclick="increase()" id = "button_big">Збільшити</button>
-
     </section>
 
     <section>
         <h4>Завдання 10</h4>
-        <p>
+        <p> Напиши скрипт створення й очищення колекції
+            елементів з наступним функціоналом.
+            Є input, у який користувач вводить бажану кількість
+            елементів. Після натискання на кнопку Create має
+            рендеритися (додаватися в DOM) колекція з
+            відповідною кількістю елементів і очищатися значення
+            в інпуті. При повторному натисканні на
+            кнопку Create поверх старої колекції має рендеритись
+            нова. Після натискання на кнопку Destroy колекція
+            елементів має очищатися.
         </p>
 
         <div id="controls">
-<input type="number" min="1" max="100" step="1" />
-<button type="button" data-create>Create</button>
-<button type="button" data-destroy>Destroy</button>
-</div>
+        <input type="number" min="1" max="100" step="1" />
+        <button type="button" data-create>Create</button>
+        <button type="button" data-destroy>Destroy</button>
+        </div>
 
-<div id="boxes"></div>
-
-            <div class="big_or_small"></div>
-            <button onclick="decrease()" id = "button_small">Зменшити</button>
-            <button onclick="increase()" id = "button_big">Збільшити</button>
+        <div id="boxes"></div>
 
     </section>
 

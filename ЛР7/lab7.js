@@ -49,7 +49,6 @@ function Output_task7()
 {
     const output = document.getElementById("outputField_7");
 
-    // Отримати всі елементи <li> в списку за допомогою селектора
     const liElements = document.querySelectorAll('ul#categories li.item');
     const numberOfLiElements = liElements.length;
 
@@ -69,28 +68,22 @@ function Output_task7()
 // task 8
 document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('login_form').addEventListener('submit', function (event) {
-        event.preventDefault(); // Зупиняємо дефолтну дію форми (перезавантаження сторінки)
+        event.preventDefault(); 
     
-        // Отримуємо значення полів
         const emailValue = this.elements.email.value.trim();
         const passwordValue = this.elements.password.value.trim();
     
-        // Перевірка на незаповнені поля
         if (!emailValue || !passwordValue) {
             alert('All form fields must be filled in');
             return;
         }
     
-        // Створюємо об'єкт із введеними даними
         const formData = {
             email: emailValue,
             password: passwordValue
         };
     
-        // Виводимо об'єкт у консоль
         console.log(formData);
-    
-        // Очищаємо значення полів форми
         this.reset();
     });
 });
@@ -104,21 +97,13 @@ function getRandomHexColor()
     return `#${Math.floor(Math.random() * 16777215).toString(16).padStart(6, 0)}`;
 }
 
-// Отримуємо кнопку і елемент span
-
 document.addEventListener('DOMContentLoaded', function() {
 const button = document.querySelector('.change-color');
 const colorSpan = document.querySelector('.color');
 
-// Додаємо слухача подій до кнопки
 button.addEventListener('click', function() {
-    // Отримуємо випадковий колір
     const randomColor = getRandomHexColor();
-
-    // Змінюємо фоновий колір елемента <body>
     document.body.style.backgroundColor = randomColor;
-
-    // Записуємо колір в <span>
     colorSpan.textContent = randomColor;
 });
 });
