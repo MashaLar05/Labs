@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="lab7.js"></script>
+    <link rel="stylesheet" type="text/css" href = "lab7.css">
+    <title>Лабораторна 7</title>
+</head>
+
+
+<body>
+    
+    <!-- №варіантів : 1 ,3, 5, 7, 8, 9,10. -->
+
+    <header>
+        <h2>Лабораторна робота № 7</h2>
+        <h4>Виконала студентка групи ІС-22 Ларіна Марія</h4>
+        <h4>Варіант № 13</h4>
+    
+    </header>
+
+
+    <section>
+        <h4>Завдання 1</h4>
+        <p>У звітному HTML-документі створити html-розміту,
+            яка складається з наступних елементів : текст, кнопка,
+            поле введення. Натискання на кнопку "SHOW ME" має виводити            
+            значення з поля введення у консолі. У звітному HTML-документі відобразити скрін
+            програмного коду</p>
+
+            <button onclick="ShowMe()">SHOW ME</button>
+            <input type="text" id = "inputField_1">
+
+    </section>
+
+    
+
+    
+    <section>
+        <h4>Завдання 3</h4>
+        <p>Кнопка "Приховати" ховає текст , виводячи зірочки
+            замість введеної інформації, замінює назву кнопки на
+            "Розкрити", при повторному натисканні текст знову
+            стає доступним і кнопка набуває початкового вигляду.
+        </p>
+
+            
+            <input type="text" id = "inputField_2">
+            <button onclick="ShowOrHide()" id = "button_2">Приховати</button>
+
+    </section>
+
+
+    <section id = "task5">
+        <h4>Завдання 5</h4>
+        <p> Додайте слухач кліку на window і визначте чи
+            клікнув користувач у div з id="place".
+            Примітка: Якщо користувач клікнув на зеленому
+            прямокутнику – у консолі виведе true. У
+             протилежному випадку - false
+        </p>
+
+            <div id="place"></div>
+            <input type="text" id = "outputField_3">
+
+    </section>
+
+    <section>
+        <h4>Завдання 7</h4>
+        <p>
+        </p>
+
+        <div class="block_task7">
+            <ul id="categories">
+                <li class="item">
+                    <h2>Animals</h2>
+                    <ul>
+                        <li>Cat</li>
+                        <li>Hamster</li>
+                        <li>Horse</li>
+                        <li>Parrot</li>
+                    </ul>
+                </li>
+                <li class="item">
+                    <h2>Products</h2>
+                    <ul>
+                        <li>Bread</li>
+                        <li>Prasley</li>
+                        <li>Cheese</li>
+                    </ul>
+                </li>
+                <li class="item">
+                    <h2>Technologies</h2>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>React</li>
+                        <li>Node.js</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="block_task7">
+            
+            <div class="text" id="outputField_7" contenteditable="true"></div>
+            <button onclick="Output_task7()">Вивести</button>
+        </div>
+
+    </section>
+
+    <section>
+        <h4>Завдання 8</h4>
+        <p>Напиши скрипт управління формою логіна.
+        </p>
+
+        <form class="login-form" id = "login_form">
+            <label>
+                Email
+                <input type="email" name="email">
+            </label>
+            <label>
+                Password
+                <input type="password" name="password">
+            </label>
+            <button type="submit">Log in</button>
+        </form>
+            <div class="big_or_small"></div>
+            <button onclick="decrease()" id = "button_small">Зменшити</button>
+            <button onclick="increase()" id = "button_big">Збільшити</button>
+
+    </section>
+
+    <section>
+        <h4>Завдання 9</h4>
+        <p>
+        </p>
+        <div class="widget">
+        <p>Background color: <span class="color">-</span></p>
+        <button type="button" class="change-color">Change color</button>
+        </div>
+
+            <div class="big_or_small"></div>
+            <button onclick="decrease()" id = "button_small">Зменшити</button>
+            <button onclick="increase()" id = "button_big">Збільшити</button>
+
+    </section>
+
+    <section>
+        <h4>Завдання 10</h4>
+        <p>
+        </p>
+
+        <div id="controls">
+<input type="number" min="1" max="100" step="1" />
+<button type="button" data-create>Create</button>
+<button type="button" data-destroy>Destroy</button>
+</div>
+
+<div id="boxes"></div>
+
+            <div class="big_or_small"></div>
+            <button onclick="decrease()" id = "button_small">Зменшити</button>
+            <button onclick="increase()" id = "button_big">Збільшити</button>
+
+    </section>
+
+</body>
+</html>
