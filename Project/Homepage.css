@@ -1,18 +1,27 @@
 .content
 {
-    width: 100vw;
+    width: 97vw;
     background: #E3E2DF;
 }
 
 header
 {
-    width: 100vw;
+    width: 96.5vw;
     height: 20%;
     flex-shrink: 0;
     background: #E3AFBC;
     border-radius: 10px;
     border: 8px solid;
     border-image: linear-gradient(150deg, #fa69698d, #e9030300) 0.6;
+    display: flex;
+    flex-direction:column;
+}
+
+.First_part_header
+{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
 }
 
 h1
@@ -23,5 +32,88 @@ h1
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    letter-spacing: -1.224px;
+    letter-spacing: -1.2px;
 }
+
+
+.Search_form
+{
+    width: 50%;
+    flex-shrink: 0;
+    margin-top:2%;
+}
+
+
+#Search_field
+{
+    width: 55%;
+    height: 30%;
+    flex-shrink: 0;
+    border-radius: 15px;
+    background: #FFF;
+    margin-left: 15%;
+} 
+
+#Search_button
+{
+    width: 60px;
+    height: 30px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    background: #5D001E;
+    justify-content: center;
+    color: #E3E2DF;
+    text-align: center;
+    font-family: IBM Plex Mono;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.34px;
+}
+
+#menu
+{
+    width: 70%;
+    height: 100%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: 30%;
+    
+}
+
+ul.menu 
+{
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #5D001E;
+    font-size: 14px;
+    height: 70%;
+    margin: 2px;
+    font-size: 1em;
+}
+ul.menu > li 
+{
+    float: left;
+    margin: 1px 10px;
+    width: 20%;
+}
+
+ul.menu > li a 
+{
+    display: inline-block;
+    color: #E3E2DF;
+    text-align: left;
+    padding: 3px 4px;
+    text-decoration: none;
+    margin-top: -5px;
+    border-radius: 3px;
+}
+
+ul.menu > li a:hover 
+{
+    background-color: #E3E2DF; 
+    color:#5D001E;
+    border: #9A1750 solid 2px;
+    border-radius: 7px;
+} 

@@ -70,17 +70,17 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('login_form').addEventListener('submit', function (event) {
         event.preventDefault(); 
     
-        const emailValue = this.elements.email.value.trim();
-        const passwordValue = this.elements.password.value.trim();
+        const email = this.elements.email.value.trim();
+        const password = this.elements.password.value.trim();
     
-        if (!emailValue || !passwordValue) {
+        if (!email || !password) {
             alert('All form fields must be filled in');
             return;
         }
     
         const formData = {
-            email: emailValue,
-            password: passwordValue
+            email: email,
+            password: password
         };
     
         console.log(formData);
