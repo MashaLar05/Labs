@@ -9,23 +9,30 @@
 
 <body>
 
-    <header>  
-    <div class="First_part_header">
+    <header class="fixed-header">
+    <div style="width: 60%;">  
         <h1>Полюби себе - навчись танцювати!</h1>
+        <div id="menu">
+            <div class="dropdown">
+                <button onclick="toggleDropdown()" id="Menu_button">Menu</button>
+                <div id="dropdownContent">
+                    <a href="#">Home page</a>
+                    <a href="#">Recommendations</a>
+                    <a href="#">My video</a>
+                </div>
+            </div>
+            <!-- <ul class="menu">
+                <li><a href="#home" class="active">Home page</a></li>
+                <li><a href="#home">Recommendations</a></li>
+                <li><a href="#home">My video</a></li>
+            </ul> -->
+        </div>
+    </div>
 
         <form class = "Search_form">
             <input id="Search_field" type="text" name = "Search">
             <input id = "Search_button" type="submit" value="Пошук"name="Search_button">
         </form>
-    </div>
-
-    <div id="menu">
-         <ul class="menu">
-            <li><a href="#home">Home page</a></li>
-            <li><a href="#home">Recommendations</a></li>
-            <li><a href="#home">My video</a></li>
-        </ul> 
-    </div>
     </header>
 
     <section class="content">
@@ -41,7 +48,7 @@
             </nav>
 
             <div class="interior_div">
-                <img class="picture" src="https://cdn.quotesgram.com/img/44/28/93038827-DanceLife-Quotes-Adults-Template-12.jpg",  alt="Цитата", style="width: 33%; float: right; margin-left: 40px;"> 
+                <img class="picture" src="images/citation.jpg",  alt="Цитата", style="width: 33%; float: right; margin-left: 40px;"> 
             
                 <div>
                     <p style="margin-top: 40px;">
@@ -60,7 +67,7 @@
         <div class="interior_div">
                 <h3>Навіщо танцювати?</h3>
         
-                <img  class="picture" src="https://media.post.rvohealth.io/wp-content/uploads/2020/11/dancing-dance-class-1200x628-facebook-1200x628.jpg", alt="Різні види танцю", style="width: 40%; float: left; margin-right: 20px;">
+                <img  class="picture" src="images/why_dance.jpg", alt="Різні види танцю", style="width: 35%; float: left; margin-right: 20px;">
                 <p>
                     Танець споконвіку допомагав спілкуванню людей: весело проводити час з друзями, а молоді — знайомитися
                      та зустрічатися: на сільських майданах, на балах, на вечірках, у клубах, на дансингах, дискотеках та
@@ -112,7 +119,7 @@
         <div class="interior_div">
             <h3>Який вид танців обрати?</h3>
                     
-            <img class="picture" src="https://cms.harlequinfloors.com/wp-content/uploads/2020/01/shutterstock_218884606-1024x685.jpg", alt="Різні види танцю", style="width: 30%; float: left; margin-right: 25px;">
+            <img class="picture" src="images/kinds_dance.png", alt="Різні види танцю", style="width: 30%; float: left; margin-right: 25px;">
                 
             <br><p style="margin: 20px;">
         
@@ -224,17 +231,18 @@
 
     <footer>
         <div class="finish_block">
-            Автори
+            Автори<br>
+            <a class="logo_href" href="mailto:masalarina167@gmail.com"><img class="logo" src="images/gmail_logo.png"  alt="Gmail"></a>
+            <a class="logo_href" href="https://t.me/Masha_5_Lar"><img class="logo" src="images/telegram_logo.png" alt="Telegram"></a>
         </div>
     </footer>
+
     <script>
     function toggleDropdown() 
     {
         const dropdownContent = document.getElementById("dropdownContent");
         dropdownContent.style.display = (dropdownContent.style.display === "block") ? "none" : "block";
     }
-
-        // Закривати випадаючий список, якщо користувач клікає поза ним
         document.addEventListener("click", function(event) 
         {
         const dropdown = document.querySelector(".dropdown");
