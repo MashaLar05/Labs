@@ -272,6 +272,7 @@ a:hover, a:active
     text-decoration: none;
     margin-top: -5px;
     border-radius: 3px;
+    font-size: 0.6em;
 }
 
 #dropdownContent a:hover 
@@ -403,6 +404,10 @@ a:hover, a:active
         width: 25%;
         height: 25%;
     }
+    #dropdownContent a 
+    {
+        font-size: 0.8em;
+    }
 
 }
 
@@ -503,6 +508,10 @@ a:hover, a:active
     }
 
     .finish_block
+    {
+        font-size: 1em;
+    }
+    #dropdownContent a 
     {
         font-size: 1em;
     }
